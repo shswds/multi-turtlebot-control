@@ -1,0 +1,25 @@
+enter command raspberry pi on turtlebots
+
+ssh ubuntu@192.168.0.
+export TURTLEBOT3_MODEL=waffle
+ROS_NAMESPACE=tb3_0 roslaunch turtlebot3_bringup turtlebot3_robot.launch multi_robot_name:="tb3_0" set_lidar_frame_id:="tb3_0/base_scan"
+ROS_NAMESPACE=tb3_1 roslaunch turtlebot3_bringup turtlebot3_robot.launch multi_robot_name:="tb3_1" set_lidar_frame_id:="tb3_1/base_scan"
+ROS_NAMESPACE=tb3_2 roslaunch turtlebot3_bringup turtlebot3_robot.launch multi_robot_name:="tb3_2" set_lidar_frame_id:="tb3_2/base_scan"
+---------------------------------------------------------------------------------------------------
+enter command master computer - for bring up turtlebots 
+
+roslaunch move_base_two.launch
+navigation_two.launch
+
+---------------------------------------------------------------------------------------------------
+enter command master computer - for control turtlebots(Euler angle)
+
+python3 k1.py
+python3 k2.py
+python3 k3.py
+---------------------------------------------------------------------------------------------------
+enter command master computer - for control turtlebots(Quaternion)
+
+python3 final1.py
+python3 final2.py
+python3 final3.py
