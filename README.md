@@ -8,4 +8,4 @@
 
 # control code
 - 처음에 Euler angle과 비례상수를 이용한 피드백 제어를 진행하였음
-- Euler angle로 횡방향 제어를 함에 있어 경로추종을 잘 못하고 부드럽게 제어가 잘 안되서 Quaternion 좌표게를 이용하여 해결함
+- Euler angle로 부드럽게 횡방향 제어가 잘 안되서 Quaternion 좌표 변환 이용하여 해결함
