@@ -7,5 +7,6 @@
 - 만들어진 맵 위에서 2D Lidar를 통해 현재 터틀봇 위치 좌표를 받아옴
 
 # control code
-- 처음에 Euler angle과 비례상수를 이용한 피드백 제어를 진행하였음
-- Euler angle로 부드럽게 횡방향 제어가 잘 안되서 Quaternion 좌표 변환 이용하여 해결함
+- 처음에 ros1 package에서 사용하는 Quaternion 좌표와 비례상수를 이용한 피드백 제어를 진행하였음
+- Quaternion로 좌표를 이용한 횡방향 제어기 설계를 하고 수정하는데 어려움을 겪음
+- Quaternion 좌표를 Euler angle 좌표 변환하여 횡방향 제어기 설계를 하였고, 부드럽고 안정적으로 경로추정을 잘하게됨
